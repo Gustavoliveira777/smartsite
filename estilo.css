@@ -1,0 +1,294 @@
+
+@font-face{
+    font-family: "SF Pro";
+    font-style: normal;
+    font-weight: normal;
+    src:url('fonte/FontsFree-Net-SFProText-Medium.ttf');
+}
+@font-face{
+    font-family: "SF Pro Regular";
+    font-style: normal;
+    font-weight: normal;
+    src:url('fonte/FontsFree-Net-SFProText-Regular.ttf');
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family: "SF Pro Regular";
+}
+body{
+    background-color: #E6E8DD;
+}
+.nav{
+    display: flex;
+    background-color: #333333;
+    width: 100%;
+    color:#CDCDCD;
+    position: fixed;
+    font-family: "SF Pro Regular","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 11pt;
+    height: 7%;
+    align-items: center;
+    justify-content: center;
+}
+.nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    
+    display: flex;
+}
+.nav ul li{
+    text-align: center;
+    padding: 30px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:#CDCDCD;
+}
+.nav ul li a:hover{
+    text-decoration: none;
+    color:#f5f5f5;
+}
+.logomarca{
+    font-size: 11pt;
+    font-weight: bold;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+}
+.menu-icone{
+    color: #CDCDCD;
+    float: left;
+    display: none;
+}
+.menu-icone a{
+    text-decoration: none;
+    color: #CDCDCD;
+}
+.menu-icone:hover{
+    color: #f5f5f5;
+}
+.conteudo{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .banner-img{
+    margin-top: 10%;
+    border-radius: 7px;
+    width: 800px;
+    height: 450px;
+}
+.titulo-secao{
+    margin-top: 5%;
+    font-family: "SF Pro", sans-serif;
+    font-weight: bold;
+    font-size: 30pt;
+    color: #000000;
+}
+.card-largo{
+    width: 100%;
+    border-radius: 7px;
+    border: 2px #CDCDCD solid;
+    box-shadow: grey;
+    overflow: auto;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+.card{
+    font-family: "SF Pro Regular";
+    height: 100%;
+    max-width: 30%;
+
+    border-radius: 7px;
+    background-color: #030303;
+    color: #F5F5F7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 2%;
+    
+}
+.card:hover{
+    box-shadow: 0px 4px 10px rgba(3,3,3,0.7);
+}
+.card .card-titulo{
+    font-family: "SF Pro";
+    margin: 10px;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 15pt;
+}
+.card .card-titulo .card-data-categoria{
+    font-family: "SF Pro Regular";
+    font-weight: normal;
+    text-align: left;
+    font-size: 9pt;
+}
+.card .card-titulo .card-img{
+    width: 100%;
+    height: 153px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.centralizar{
+    text-align: center;
+}
+.card .card-corpo{
+    font-family: "SF Pro Regular";
+    font-size: 11pt;
+    text-align: left;
+    margin: 10px;
+
+}
+.card .card-rodape{
+    margin: 10px;
+}
+.botao{
+    background-color: #0071E3;
+    color: #F5F5F7;
+    border-radius: 50px;
+    border-width: 0px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 11px;
+    padding-right: 11px;
+
+}
+.botao:hover{
+    background-color: rgba(0, 113, 227, 0.7);
+}
+.rodape{
+    display: flex;
+    background-color: #444444;
+    width: 100%;
+    color:#CDCDCD;
+    
+    font-family: "SF Pro Regular","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 10pt;
+    height: 30%;
+    flex-direction: column;
+}
+.rodape .rodape-copy{
+    background-color: #333333;
+    width: 100%;
+    text-align: left;
+    height: 8%;
+    padding-bottom:1%;
+    padding-top:1%;
+
+}
+.rodape .rodape-secoes{
+    display: flex;
+    margin:10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.rodape .rodape-titulo-secao{
+    font-family: "SF Pro";
+    font-size: 12pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.rodape ul{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3%;
+}
+.rodape ul li{
+    text-align: left;
+}
+.rodape ul li a{
+    text-decoration: none;
+    color:#CDCDCD;
+}
+.rodape ul li a:hover{
+    text-decoration: none;
+    color:#f5f5f5;
+}
+
+
+@media screen and (max-width: 850px){
+    .menu-icone{
+        display: flex;
+    }
+    .conteudo{
+        margin-left: 3%;
+        margin-right: 3%;
+
+    }
+   .card-largo{
+       flex-direction: row;
+       padding: 1%;
+   }
+   .logomarca{
+       display: flex;
+   }
+   .nav ul{
+       display: none;
+   }
+   .banner .banner-img{
+       width: 100%;
+       height: 100%;
+       margin-top:20% ;
+   }
+  
+   .card{
+       max-width: 45%;
+       margin-left: 5%;
+
+   }
+   .card .card-titulo .card-img{
+       width: 100%;
+   }
+}
+
+@media screen and (max-width: 414px){
+    .menu-icone{
+        display: flex;
+    }
+    .conteudo{
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+   .card-largo{
+       flex-direction: column;
+       padding: 1%;
+   }
+   .logomarca{
+       display: flex;
+   }
+   .nav ul{
+       display: none;
+   }
+   .banner .banner-img{
+       width: 100%;
+       height: 100%;
+       margin-top:20% ;
+   }
+  
+   .card{
+       max-width: 100%;
+       margin-left: 0%;
+
+   }
+   .card .card-titulo .card-img{
+       width: 100%;
+   }
+}
